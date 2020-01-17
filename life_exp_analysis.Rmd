@@ -10,4 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## abstract
-we will reproduce the plot  cd 
+we will reproduce the plot
+
+
+## analysis
