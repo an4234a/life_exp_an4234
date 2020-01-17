@@ -13,12 +13,18 @@ knitr::opts_chunk$set(echo = TRUE)
 we will reproduce the plot
 
 
-## analysis
+## life expectancy analysis
 
 here we begin the analysis
 
 ```{r}
 library(tidyverse)
 library(gapminder)
+data(gapminder_unfiltered)
+head(gapminder_unfiltered)
+
+gapminder_unfiltered %>%
+  group_by(year,country) %>%
+  summarise(max = max(lifeExp))
 ```
 
